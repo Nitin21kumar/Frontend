@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Era </title>
+    <link rel="stylesheet" href="NavigationBar.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show')
+            })
+        })
+    </script>
+</head>
+<body>
+<!-- ------------------------------------------------------------------NAVIGATION BAR-------------------------------------------------------------------------------- -->
+
+    <nav>
+        <label  class="logo"> Secure Era </label>
+        <ul>
+            <li><a class="active" onclick="myhome()"> Home </a></li>
+            <li><a href="#"> About </a></li>
+            <li><a href="#"> Login  </a></li>
+            <li><a href="#"> Contact </a></li>
+            <li><a href="#"> Feedback </a></li>
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+
+<!-- ------------------------------------------------------------------NAVIGATION BAR-------------------------------------------------------------------------------- -->
+
+    <section class="overlay">
+        <div class="form_box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="Login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="Register()">New User</button>
+
+            </div>
+            
+            <div class="social-icons">
+                <img src="facebook.png" alt="facebook">
+                <img src="gmail.png" alt="gmail" id="my-signin2">
+                <img src="twitter.jpg" alt="twitter">
+            </div>
+            <form name="myform" id="Login" class="input-group" method="post" >
+                <input type="text" name="Uname" class="input-field"  placeholder="User Id" required>
+                <input type="text" name="Pass" class="input-field"  placeholder="Enter Password" required>
+                <input type="checkbox" class="checkbox"> <span>
+                    Remember Password
+                </span>
+                <a href="CurrentLocation.html">
+                    <button type="Submit" class="submit-btn" onclick="myFunction()"> Login</button>
+                </a>
+
+            </form>
+            <form id="Register" class="input-group">
+                <input type="text" class="input-field" placeholder="User-Id" required>
+                <input type="email" class="input-field" placeholder="Email-Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="checkbox"> <span>
+                    I agree to the term & conditions
+                </span>
+                <button type="Submit" class="submit-btn"> Ragister</button>
+
+            </form>
+        </div>
+        
+    </div>
+    </section>
+    <section>
+    <div class="cube">
+        <div class="top"></div>
+        <div>
+            <span style="--i:0"></span>
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+        </div>
+    
+    
+    </section>
+
+    <!-- -------------------------------------------------------------------------LOGIN JAVA SCRIPT--------------------------------------------------------------------------- -->
+    <script>
+        
+        var x=document.getElementById("Login");
+        var y=document.getElementById("Register");
+        var z=document.getElementById("btn");
+        function Register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function Login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+
+        
+
+    </script>
+    <script>
+        function myFunction()
+        {
+            window.location.href="LiveLocation.html";
+        }
+    </script>
+    <script>
+        function myhome()
+        {
+            window.location.herf="NavigationBar.html"
+        }
+    </script>
+    
+        <!-- -------------------------------------------------------------------------LOGIN JAVA SCRIPT END--------------------------------------------------------------------------- -->
+ 
+</body>
+</html>
