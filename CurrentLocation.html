@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Era</title>
+    <link rel="stylesheet" href="CurrentLocation.css">
+</head>
+<body>
+    <!-- // -------------------------------------------------------------------------NAVIGATION BAR HTML------------------------------------------------------------------------------------------- -->
+
+    <nav>
+        <label  class="logo"> Secure Era </label>
+        <ul>
+            <li><a class="active" href="NavigationBar.html"> Home </a></li>
+            <li><a href="#"> About </a></li>
+            <li><a href="#"> Contact </a></li>
+            <li><a href="#"> Feedback </a></li>
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+    <!-- // -------------------------------------------------------------------------NAVIGATION BAR HTML END------------------------------------------------------------------------------------------- -->
+    
+    
+    
+    
+    
+    
+    <!-- // -------------------------------------------------------------------------GEO LOCATION  HTML------------------------------------------------------------------------------------------- -->
+
+    <div class="cur" >
+        <div class="location">
+            <h1>Hello you are ready for your GeoLocation</h1>
+            <button onclick="getYourLocation()" id="get"> Get Your Location</button>
+    
+            <div id="output"></div>
+    
+            <script src="https://code.jquery.com/jquery-2.2.4.min.js">
+    
+            </script>
+            <script src="CurrentLocation.js"></script>
+        </div>
+        
+
+        <button id="back" onclick="Backfunction()">Back</button>
+
+    
+        
+    </div>  
+    <!-- // -------------------------------------------------------------------------GEO LOCATION HTML END------------------------------------------------------------------------------------------- -->
+    
+    
+    <!-- // -------------------------------------------------------------------------CUBE HTML------------------------------------------------------------------------------------------- -->
+
+    <div class="cube">
+        <div class="top"></div>
+        <div>
+            <span style="--i:0"></span>
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+        </div>
+        
+    </div>
+    <!-- // -------------------------------------------------------------------------CUBE HTML END------------------------------------------------------------------------------------------- -->
+    
+    
+    
+    <!-- // -------------------------------------------------------------------------JAVA SCRIPT FOR NEXT PAGE------------------------------------------------------------------------------------------- -->
+
+    <script>
+        function Backfunction()
+        {
+            window.location.href="LiveLocation.html";
+        }
+    </script>
+        <!-- // -------------------------------------------------------------JAVA SCRIPT FOR NEXT PAGEN END------------------------------------------------------------------------------------------- -->
+
+</body>
+</html>
